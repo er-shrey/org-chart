@@ -1,0 +1,6 @@
+<div class="org-chart-entity-connector org-chart-entity-border" *ngIf="hasParent"></div>
+<div class="org-chart-entity-box" (click)="toggleShowChild()">
+	<div class="org-chart-entity-name">{{data?.name}}</div>
+	<div class="org-chart-entity-type">{{data?.type}}</div>
+</div>
+<div class="org-chart-entity-connector org-chart-entity-border" *ngIf="data?.children.length && !hideChild"></div>

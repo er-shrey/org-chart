@@ -1,0 +1,53 @@
+$connectorHeight: 2em;
+$connectorColor: green;
+$boxColor: #0085ca;
+
+.org-chart-entity-border {
+	border-left: 1px solid $connectorColor;
+	border-top: 1px solid $connectorColor;
+}
+.org-chart-entity-connector {
+	height: $connectorHeight;
+}
+.org-chart-entity-box {
+	padding: 0.25em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0085ca;
+    background-color: #0085ca;
+    border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0 .5rem 1rem #777!important;
+}
+
+.org-chart-entity-name {
+	white-space: nowrap;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.org-chart-entity-type {
+	white-space: nowrap;
+	color: #fff;
+	font-size: 10px;
+	text-transform: capitalize;
+}
+
+.org-chart-container {
+	display: flex;
+	flex: 1;
+}
+
+.org-chart-sub-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.org-chart-connector-container {
+	display: flex;
+}
+
+.org-chart-connector {
+	flex: 1;
+}
