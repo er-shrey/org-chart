@@ -1,5 +1,5 @@
 <org-chart-entity *ngIf="data" [data]="data" [hasParent]="hasParent" (toggleChild)="toggleShowChild($event)" [hideChild]="hideChild"></org-chart-entity>
-<div class="org-chart-container" [hidden]="hideChild">
+<div class="org-chart-container" [style.display]="hideChild ? 'none' : 'flex'">
 	<ng-container *ngFor="let data of data?.children; first as isFirst; last as isLast">
 		<div class="org-chart-sub-container">
 			<div class="org-chart-connector-container">
@@ -7,7 +7,7 @@
 				<div class="org-chart-entity-border"></div>
 				<div class="org-chart-connector org-chart-entity-border" [style.border-color]="isLast?'transparent':''"></div>
 			</div>
-			<org-chart [data]="data" [hasParent]="true"></org-chart>
+			<angular-org-chart [data]="data" [hasParent]="true"></angular-org-chart>
 		</div>
 	</ng-container>
 </div>

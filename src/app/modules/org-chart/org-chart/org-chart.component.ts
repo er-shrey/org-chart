@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { OrgData } from '../orgData';
 
 @Component({
-	selector: 'org-chart',
+	selector: 'angular-org-chart',
 	templateUrl: './org-chart.component.html',
 	styleUrls: ['./org-chart.component.scss', '../org-chart-combined.scss']
 })
