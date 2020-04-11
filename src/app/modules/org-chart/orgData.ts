@@ -1,12 +1,14 @@
 export interface OrgData {
 	name: string;
 	type: string;
+	collapsed?: boolean;
 	children: OrgData[];
 }
 
 export class OrgEntity implements OrgData {
 	name: string;
 	type: string;
+	collapsed: boolean;
 	children: OrgEntity[];
 	parent?: OrgEntity;
 	constructor(orgStructure: string[], parent?: OrgEntity) {

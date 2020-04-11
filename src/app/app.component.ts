@@ -10,6 +10,7 @@ export class AppComponent {
   orgData: OrgData= {
     name: "Hello",
     type: 'User',
+    collapsed: true,
     children: [{
       name: "Hello1",
       type: 'User',
